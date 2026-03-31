@@ -22,7 +22,7 @@ export default function Dashboard() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('/api/analytics');
+      const res = await fetch('http://localhost:8000/api/analytics');
       const result = await res.json();
       
       if (result.success) {
